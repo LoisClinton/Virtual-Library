@@ -24,8 +24,8 @@ describe("Podcast tests", () => {
     // podcast specific properties
     expect(myPodcast.host).toEqual("the host");
     expect(myPodcast.episodeName).toEqual("an episode name");
-    expect(myPodcast.episodeNumber).toEqual("episode number");
-    expect(myPodcast.guests).toEqual(2);
+    expect(myPodcast.episodeNumber).toEqual(10);
+    expect(myPodcast.guests).toEqual(["alice", "bob"]);
   });
 
   test("Podcast has listen method", () => {
