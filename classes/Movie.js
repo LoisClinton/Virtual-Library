@@ -22,6 +22,14 @@ class Movie extends Media {
   summary() {
     return `Title: ${this.title}, Director: ${this.director}, Year: ${this.year}, Genre: ${this.genre}, Rating: ${this.rating}`;
   }
+
+  static calculateAverageRating(collection) {
+    let total = 0;
+    for (const item of collection) {
+      total += item.rating;
+    }
+    return total / collection.length;
+  }
 }
 
 // don't change below
